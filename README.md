@@ -22,14 +22,7 @@ In this Project, <br />
 - Windows Server 2022
 - Windows 11 (24H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
-
-- Step 1
-- Step 2
-- Step 3
-- Step 4
-
-<h2>Deployment and Configuration Steps</h2>
+<h2>DNS Exercises</h2>
 
 <p>
 <img width="1095" height="636" alt="image" src="https://github.com/user-attachments/assets/5c35eda0-45f9-4d7e-8d8a-c064fdc1d6cb" />
