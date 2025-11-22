@@ -1,11 +1,13 @@
 <p align="center">
 <img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/08b4eda2-473f-4cc3-a35e-44f13257e740" />
+<img width="562" height="563" alt="image" src="https://github.com/user-attachments/assets/5d1a9b9c-283c-4440-b0aa-8a5aa57ba376" />
+
 
 
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+<h1>Practicing with DNS</h1>
+In this Project, <br />
 
 
 
@@ -13,7 +15,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Active Directory Domain Services
+- DNS Manager
 - PowerShell
 
 <h2>Operating Systems Used </h2>
