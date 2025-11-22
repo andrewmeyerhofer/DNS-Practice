@@ -30,7 +30,7 @@ In this Project, <br />
 
 </p>
 <p>
-First, I logged into dc-1 and client-1 as jane_admin. On dc-1 I opened Powershell and pinged "Mainframe" (just a random word). Nothing will come up because the word mainframe is not cached in the DNS of the computer. I checked this by typing ipconfig /displaydns.
+To start, I logged into the VMs for dc-1 and client-1 as jane_admin. On dc-1, I opened Powershell and pinged "Mainframe" (just a random word). Nothing came up because the word "Mainframe" is not cached in the DNS of dc-1. I confirmed this by typing ipconfig /displaydns.
 </p>
 <br />
 
@@ -40,7 +40,7 @@ First, I logged into dc-1 and client-1 as jane_admin. On dc-1 I opened Powershel
 
 </p>
 <p>
-I then opened notepad and clicked open in the files menu. I went to the system32-drivers-etc folder and found the hosts file. 
+I then opened the files menu in notepad. I went to the System32 > drivers > etc folder and located the hosts file. 
 </p>
 <br />
 
@@ -50,7 +50,7 @@ I then opened notepad and clicked open in the files menu. I went to the system32
 
 </p>
 <p>
-I then opened the host file in notepad.
+Upon opening the file, I could view and edit a sample HOSTS file in notepad. 
 </p>
 <br />
 
@@ -60,7 +60,7 @@ I then opened the host file in notepad.
 
 </p>
 <p>
-After adding the IP address and name "Mainframe" to the hosts file (and saving it), I was successfully able to ping it from Powershell.
+I added the IP address and name "Mainframe" to the hosts file (and saving it), I was successfully able to ping it from Powershell.
 </p>
 <br />
 
