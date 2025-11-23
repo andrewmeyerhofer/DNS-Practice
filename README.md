@@ -60,7 +60,7 @@ Upon opening the file, I could view and edit a sample HOSTS file in notepad.
 
 </p>
 <p>
-I added the IP address and name "Mainframe" to the hosts file (and saving it), I was successfully able to ping it from Powershell.
+I then added the localhost address and the word "Mainframe" at the bottom of the hosts file (and saved it). I could now ping Mainframe in Powershell successfully. 
 </p>
 <br />
 
@@ -70,7 +70,7 @@ I added the IP address and name "Mainframe" to the hosts file (and saving it), I
 
 </p>
 <p>
-I found the dns option under Windows administrative tools.
+Next, I located the DNS option in Windows administrative tools.
 </p>
 <br />
 
