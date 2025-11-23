@@ -70,7 +70,7 @@ I then added the localhost address and the word "Mainframe" at the bottom of the
 
 </p>
 <p>
-Next, I located the DNS option in Windows administrative tools.
+Next, I selected the DNS option in Windows Administrative Tools to open DNS manager. 
 </p>
 <br />
 
@@ -80,7 +80,7 @@ Next, I located the DNS option in Windows administrative tools.
 
 </p>
 <p>
-I used ipconfig to get the IPv4 adress.
+I then went to Powershell and used ipconfig to obtain the IPv4 address (needed later).
 </p>
 <br />
 
@@ -90,7 +90,7 @@ I used ipconfig to get the IPv4 adress.
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In DNS Manager, I opened the mydomain.com folder and right clicked to create a new host record.
 </p>
 <br />
 
@@ -100,7 +100,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+When the New Host box opened, I entered "mainframe2" as the name and put in the IPv4 address from earlier. I made sure neither of the boxes were checked, then clicked the Add Host button.
 </p>
 <br />
 
@@ -110,7 +110,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Mainframe2 was now visable in the mydomain.com folder as a Host A record.
 </p>
 <br />
 
@@ -120,7 +120,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-In Powershell I pinged mainframe2. The computer actually had to reach out to the DNS server, as apposed to using local DNS cache or Local Host file.
+I then went back to Powershell and pinged mainframe2. This time, dc-1 had to reach out to the actual DNS server, as apposed to using the local DNS cache or localhost file.
 </p>
 <br />
 
@@ -130,7 +130,7 @@ In Powershell I pinged mainframe2. The computer actually had to reach out to the
 
 </p>
 <p>
-Changed the IP address to Google's IP address. 
+Next, I went to the properties menu of mainframe2 in DNS Manager. I changed the previous IP address into Google's IP address (8.8.8.8) and checked the box to update the PTR record.
 </p>
 <br />
 
@@ -140,7 +140,7 @@ Changed the IP address to Google's IP address.
 
 </p>
 <p>
-I opened client-1 and waited a couple minutes after changing the IP address on dc-1. I then pinged mainframe2 and the IP address came up as 8.8.8.8 as intended. I went back to dc-1 and quickly changed the IP address back to 10.0.0.4, then pinged it again on client-1. It still came up as 8.8.8.8, meaning the computer was relying on the local DNS cache rather than the true IP address. (reword)
+I opened client-1 and waited a couple minutes after changing the IP address on dc-1. I then pinged mainframe2 and the IP address came up as 8.8.8.8 as intended. I went back to dc-1 and quickly changed the IP address back to 10.0.0.4, then pinged it again on client-1. It still came up as 8.8.8.8, meaning the computer was relying on the local DNS cache rather than the true IP address. (reword) next
 </p>
 <br />
 
