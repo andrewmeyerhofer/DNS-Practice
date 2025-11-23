@@ -140,7 +140,7 @@ Next, I went to the properties menu of mainframe2 in DNS Manager. I changed the 
 
 </p>
 <p>
-I opened client-1 and waited a couple minutes after changing the IP address on dc-1. I then pinged mainframe2 and the IP address came up as 8.8.8.8 as intended. I went back to dc-1 and quickly changed the IP address back to 10.0.0.4, then pinged it again on client-1. It still came up as 8.8.8.8, meaning the computer was relying on the local DNS cache rather than the true IP address. (reword) next
+I then opened the client-1 VM and waited a couple minutes (after changing the IP address on dc-1). After waiting, I opened Powershell on client-1 and pinged mainframe2, which showed the IP address 8.8.8.8 as intended. I went back to dc-1 and changed the IP address of mainframe2 back to 10.0.0.4, then quickly pinged it again on client-1. The address still came up as 8.8.8.8, meaning that client-1 was relying on information in the local DNS cache rather than the true IP address.
 </p>
 <br />
 
@@ -150,7 +150,7 @@ I opened client-1 and waited a couple minutes after changing the IP address on d
 
 </p>
 <p>
-I then opened Powershell again on client-1 as an admin. I used flushdns to clear the local DNS cache. I pinged mainframe2 after the flush and the IP address displayed correctly as 10.0.0.4.
+I closed out of Powershell on client-1 and logged back in, this time selecting the "run as administrator" option. I then used the flushdns command to clear the local DNS cache. I pinged mainframe2 after the flush and the IP address displayed correctly as 10.0.0.4.
 </p>
 <br />
 
@@ -160,7 +160,7 @@ I then opened Powershell again on client-1 as an admin. I used flushdns to clear
 
 </p>
 <p>
-Created a new CNAME file in DNS manager for Google and named it search.
+Next, I went back to DNS Manager in dc-1 and clicked the option to create a new CNAME file in the mydomain.com folder. I named the new record "search" and entered the FQDN for Google.com.
 </p>
 <br />
 
@@ -170,7 +170,7 @@ Created a new CNAME file in DNS manager for Google and named it search.
 
 </p>
 <p>
-I then pinged search on client-1 and found the IP address 142.250.68.36 (IP address for google.com). I also ran nslookup which displayed the 10.0.0.4 IP address as well as 172.217.14.100 (another IP address for Google). I finished by using the ipconfig /flushdns command. This concludes the DNS project.
+Finally, I pinged "search" in client-1's Powershell and found the IP address 142.250.68.36 (IP address for Google.com). I also used the nslookup command which displayed 10.0.0.4 and 172.217.14.100 (another IP address for Google). I then finished by using the ipconfig /flushdns command. This concludes the DNS Practice project.
 </p>
 <br />
 
