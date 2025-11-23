@@ -6,7 +6,7 @@
 </p>
 
 <h1>Practicing with DNS</h1>
-In this Project, <br />
+(Change) This project builds on the virtual machines I created in my earlier “VM Creation in Azure” project, using them to practice real DNS configuration and troubleshooting. I worked with the hosts file, DNS cache, and DNS Manager to create and modify A and CNAME records, then verified each change using tools like ping, nslookup, and ipconfig. I also tested how DNS caching behaves when IP addresses are updated and used flushdns to correct outdated entries. The project strengthened my ability to diagnose name-resolution issues and manage DNS records in a practical environment. <br />
 
 
 
