@@ -6,7 +6,7 @@
 </p>
 
 <h1>Practicing with DNS</h1>
-(Change) This project builds on the virtual machines I created in my earlier “VM Creation in Azure” project, using them to practice real DNS configuration and troubleshooting. I worked with the hosts file, DNS cache, and DNS Manager to create and modify A and CNAME records, then verified each change using tools like ping, nslookup, and ipconfig. I also tested how DNS caching behaves when IP addresses are updated and used flushdns to correct outdated entries. The project strengthened my ability to diagnose name-resolution issues and manage DNS records in a practical environment. <br />
+In this project, my goal was to practice working with DNS records and common troubleshooting techniques. The main things I learned were how to create A and CNAME records, how to clear a local cache and get information from the actual DNS server, and how to use commands such as ping, nslookup, ipconfig, ipconfig /displaydns, and ipconfig /flushdns in Powershell. This project utilizes the VMs (dc-1 and client-1) that I created in the project titled "VM Creation in Microsoft Azure." <br />
 
 
 
